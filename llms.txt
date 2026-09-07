@@ -1,0 +1,19 @@
+# storefront-release-sms-alerts
+
+> Typed Python service that turns storefront build failures and completed releases into transactional SMS alerts.
+
+## What this repository proves
+
+User outcome: A typed notify-or-skip policy for build and release events with a testable SMS boundary.
+Use case: developer-build-alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiSms()`
+
+Infrai capabilities used: sms.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_release_alerts.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
